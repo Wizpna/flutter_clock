@@ -20,7 +20,7 @@ class ClockFace extends StatelessWidget{
           width: double.infinity,
           decoration: new BoxDecoration(
             shape: BoxShape.circle,
-            color: Colors.red,
+            color: Colors.white,
           ),
 
           child: new Stack(
@@ -32,19 +32,6 @@ class ClockFace extends StatelessWidget{
                 padding: const EdgeInsets.all(10.0),
                 child:new CustomPaint(
                   painter: new ClockDialPainter(clockText: clockText),
-                ),
-              ),
-
-
-              //centerpoint
-              new Center(
-                child: new Container(
-                  width: 15.0,
-                  height: 15.0,
-                  decoration: new BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.black,
-                  ),
                 ),
               ),
 
