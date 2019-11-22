@@ -33,11 +33,6 @@ class AppClock extends StatelessWidget{
           children: <Widget>[
 
             new Clock(
-              circleColor: Colors.black,
-              showBellsAndLegs: false,
-              bellColor: Colors.green,
-              clockText: ClockText.arabic,
-              showHourHandleHeartShape: false,
             ),
           ],
         ),

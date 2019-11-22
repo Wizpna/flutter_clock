@@ -20,7 +20,7 @@ class ClockFace extends StatelessWidget{
           width: double.infinity,
           decoration: new BoxDecoration(
             shape: BoxShape.circle,
-            color: Colors.white,
+            color: Color(0xfff4f9fd),
           ),
 
           child: new Stack(

@@ -10,20 +10,12 @@ typedef TimeProducer = DateTime Function();
 class Clock extends StatefulWidget {
 
   final Color circleColor;
-  final bool showBellsAndLegs;
-  final Color bellColor;
-  final Color legColor;
   final ClockText clockText;
-  final bool showHourHandleHeartShape;
   final TimeProducer getCurrentTime;
   final Duration updateDuration;
 
-  Clock({this.circleColor = Colors.black,
-    this.showBellsAndLegs = true,
-    this.bellColor = const Color(0xFF333333),
-    this.legColor = const Color(0xFF555555),
+  Clock({this.circleColor = const Color(0xfffe1ecf7),
     this.clockText = ClockText.arabic,
-    this.showHourHandleHeartShape = false,
     this.getCurrentTime = getSystemTime,
     this.updateDuration = const Duration(seconds: 1)});
 
